@@ -40,3 +40,4 @@ Open pull requests under review with maintainers, including fixes for good_job (
 ## Contact
 
 - WhatsApp: [+8801737923848](https://wa.me/8801737923848)
+- LinkedIn: [linkedin.com/in/trleoo](https://www.linkedin.com/in/trleoo/)
