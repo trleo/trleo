@@ -34,3 +34,9 @@ Open pull requests under review with maintainers, including fixes for good_job (
 - Verified end to end: tests green, honest about what could not be reproduced locally.
 - Security and reliability fixes first — the kind of work that has to be right before it ships.
 - Python first, with working contributions across Go, TypeScript, and Ruby projects.
+
+---
+
+## Contact
+
+- WhatsApp: [+8801737923848](https://wa.me/8801737923848)
