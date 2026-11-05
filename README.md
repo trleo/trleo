@@ -1,8 +1,8 @@
 # Hi, I'm trleo
 
-**AI Solution Lead — building production-ready AI tooling and contributing real fixes to open source.**
+I work where AI systems meet real codebases — taking something that works in a demo and making it hold up in production, inside the systems people already run.
 
-I work on the practical side of AI in production: evaluation, guardrails, observability, governance, and reliability — and on the open-source projects that other engineers rely on. My contributions are small, verifiable, and reviewed, not cosmetic.
+That usually means working inside other people's projects, not just my own: reading the existing code, reproducing the problem, writing a small fix that fits the project's conventions, and iterating through review until a maintainer is comfortable shipping it.
 
 ## What I build
 
@@ -16,7 +16,7 @@ A CLI that audits, deduplicates, and prunes AI agent skills across Claude, Curso
 
 - https://github.com/trleo/skill-cleaner
 
-## Merged contributions to other projects
+## Shipped into other people's projects
 
 - **chunkhound — SSRF protection in websearch** ([#475](https://github.com/chunkhound/chunkhound/pull/475)): added a shared SSRF validator so search-result URLs are checked before fetching, including hop-by-hop redirect validation, secure-by-default settings, and behavioural tests. Approved after three review rounds and merged into main.
 - **scalar — Auth badge overflow** ([#10841](https://github.com/scalar/scalar/pull/10841)): fixed a floating panel that briefly overflowed the viewport while hovering an "Auth Required" badge, with a regression test. Merged the same day it was opened.
@@ -27,15 +27,10 @@ A CLI that audits, deduplicates, and prunes AI agent skills across Claude, Curso
 
 Open pull requests under review with maintainers, including fixes for good_job (NULL queue/job-class charts), rclone (archive backend move-onto-itself), tenacity (LoggerProtocol compatibility with loguru), vite (CSS HMR query handling), glow (style-path expansion), vLLM (MFU/MBU for renamed quantisation methods), TheAlgorithms/Python, and skills-janitor.
 
-## Focus areas
+## How I work
 
-- LLM evaluation, guardrails, and production readiness
-- AI agent tooling and skill management
-- Open-source security and reliability fixes
-- Python, with working contributions across Go, TypeScript, and Ruby projects
-
-## Principles
-
-- Real work over activity: merged fixes, not empty commits.
-- Verified end to end: reproduction first, tests green, honest about limits.
-- Small, reviewable changes that maintainers can actually merge.
+- Reproduce first, then fix — in the project's own test setup, not in isolation.
+- Small, reviewable changes that fit the codebase's existing patterns.
+- Verified end to end: tests green, honest about what could not be reproduced locally.
+- Security and reliability fixes first — the kind of work that has to be right before it ships.
+- Python first, with working contributions across Go, TypeScript, and Ruby projects.
