@@ -1,58 +1,41 @@
 # Hi, I'm trleo
 
-AI Solution Lead — building production-ready AI systems that actually ship.
+**AI Solution Lead — building production-ready AI tooling and contributing real fixes to open source.**
 
-I help teams move from AI experiments to reliable products: clear architecture, measurable outcomes, and systems that hold up under real traffic, real data, and real users.
+I work on the practical side of AI in production: evaluation, guardrails, observability, governance, and reliability — and on the open-source projects that other engineers rely on. My contributions are small, verifiable, and reviewed, not cosmetic.
 
----
-
-## What I Do
-
-- **AI Product & Solution Architecture** — Designing LLM-powered systems, agents, and RAG pipelines with the right trade-offs for latency, cost, and quality.
-- **Production AI Engineering** — Evaluation, observability, guardrails, and iteration loops that keep AI features trustworthy after launch.
-- **Applied AI Strategy** — Turning vague AI goals into scoped, shippable roadmaps — and knowing when *not* to use AI.
-- **Technical Leadership** — Leading cross-functional teams from prototype to production, with a focus on clarity, velocity, and impact.
-
----
-
-## Focus Areas
-
-- LLM Applications & Agents
-- Retrieval-Augmented Generation (RAG)
-- AI Evaluation & Quality Systems
-- Prompt Engineering & Workflow Design
-- AI Product Strategy & Go-to-Market
-
----
-
-## Currently Exploring
-
-- Agentic workflows that are actually dependable
-- Small, fast models vs. large frontier models — picking the right tool
-- AI evaluation as a product discipline, not an afterthought
-
----
-
-## Work With Me
-
-I work with founders, startups, and teams who want AI that delivers results — not demos.
+## What I build
 
 ### LLM Production Readiness Audit
+A deterministic, offline CLI that audits LLM projects for production readiness across five areas — evaluation, guardrails, observability, governance, and reliability. 15 checks, scored GO / CONDITIONAL GO / NO-GO reports, with a passing and a failing sample included.
 
-A focused review of your AI system: architecture, prompts, retrieval, evaluation, cost, and failure modes — with a prioritized action plan to make it production-ready.
+- https://github.com/trleo/llm-production-readiness-audit
 
-### AI Solution Design Sprint
+### Skill Cleaner
+A CLI that audits, deduplicates, and prunes AI agent skills across Claude, Cursor, and Antigravity. Duplicate detection by name, content hash, and similarity — with approval-file-only pruning, quarantine with a manifest, and restore. It never deletes.
 
-From problem definition to a validated architecture and implementation plan — in days, not months.
+- https://github.com/trleo/skill-cleaner
 
-### Fractional AI Leadership
+## Merged contributions to other projects
 
-Ongoing technical leadership for teams building AI products, without a full-time hire.
+- **chunkhound — SSRF protection in websearch** ([#475](https://github.com/chunkhound/chunkhound/pull/475)): added a shared SSRF validator so search-result URLs are checked before fetching, including hop-by-hop redirect validation, secure-by-default settings, and behavioural tests. Approved after three review rounds and merged into main.
+- **scalar — Auth badge overflow** ([#10841](https://github.com/scalar/scalar/pull/10841)): fixed a floating panel that briefly overflowed the viewport while hovering an "Auth Required" badge, with a regression test. Merged the same day it was opened.
+- **Ovenbird — `cos power` command** ([#133](https://github.com/NobiResearch/Ovenbird/pull/133)): a new read-only command reporting macOS power assertions. Ovenbird's first outside contribution; thanked in the 0.8.0 release notes.
+- **Ovenbird — Vitals trend sparklines** ([#157](https://github.com/NobiResearch/Ovenbird/pull/157)): 30-day trend sparklines for Vitals, with a collecting state while data accumulates.
 
----
+## Also in review
 
-## Let's Talk
+Open pull requests under review with maintainers, including fixes for good_job (NULL queue/job-class charts), rclone (archive backend move-onto-itself), tenacity (LoggerProtocol compatibility with loguru), vite (CSS HMR query handling), glow (style-path expansion), vLLM (MFU/MBU for renamed quantisation methods), TheAlgorithms/Python, and skills-janitor.
 
-Have an AI idea, a system that needs to scale, or a product that needs to ship?
+## Focus areas
 
-📩 **Let's connect:** https://www.linkedin.com/in/trleo/
+- LLM evaluation, guardrails, and production readiness
+- AI agent tooling and skill management
+- Open-source security and reliability fixes
+- Python, with working contributions across Go, TypeScript, and Ruby projects
+
+## Principles
+
+- Real work over activity: merged fixes, not empty commits.
+- Verified end to end: reproduction first, tests green, honest about limits.
+- Small, reviewable changes that maintainers can actually merge.
