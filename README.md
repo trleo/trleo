@@ -21,6 +21,7 @@ A CLI that audits, deduplicates, and prunes AI agent skills across Claude, Curso
 - **chunkhound — SSRF protection in websearch** ([#475](https://github.com/chunkhound/chunkhound/pull/475)): added a shared SSRF validator so search-result URLs are checked before fetching, including hop-by-hop redirect validation, secure-by-default settings, and behavioural tests. Approved after three review rounds and merged into main.
 - **scalar — Auth badge overflow** ([#10841](https://github.com/scalar/scalar/pull/10841)): fixed a floating panel that briefly overflowed the viewport while hovering an "Auth Required" badge, with a regression test. Merged the same day it was opened.
 - **Ovenbird — `cos power` command** ([#133](https://github.com/NobiResearch/Ovenbird/pull/133)): a new read-only command reporting macOS power assertions. Ovenbird's first outside contribution; thanked in the 0.8.0 release notes.
+- **rollup — Exported destructuring with defaults** ([#6648](https://github.com/rollup/rollup/pull/6648)): fixed invalid output for exported variables in destructuring patterns, with a live getter for reassigned variables. Approved and merged by maintainer Lukas Taegert-Atkinson on 2026-11-08.
 - **Ovenbird — Vitals trend sparklines** ([#157](https://github.com/NobiResearch/Ovenbird/pull/157)): 30-day trend sparklines for Vitals, with a collecting state while data accumulates.
 
 ## Also in review
